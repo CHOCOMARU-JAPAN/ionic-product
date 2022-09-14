@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
+})
+export class AppComponent {
+  public appPages = [
+    { title: 'タスク登録', url: '/folder/Inbox', icon: 'home' },
+    { title: 'タスク一覧', url: '/tasks', icon: 'list' },
+  ];
+  constructor() {}
+}
